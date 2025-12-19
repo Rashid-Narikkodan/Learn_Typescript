@@ -6,7 +6,10 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "strictFunctionTypes": true
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
