@@ -24,3 +24,10 @@ function multiGenerics<NameType,AgeType>(name:NameType,age:AgeType):(NameType|Ag
    return [name,age]
 }
 multiGenerics('rashid',78)//inferred the Types automatically
+
+// 5.default generics
+function defaultGeneric<T = string>(success:T):T{
+    return success
+}
+const defaultGenWithoutType=defaultGeneric(1)
+const defaultGenWithType=defaultGeneric('true')
