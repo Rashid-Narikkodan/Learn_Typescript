@@ -21,9 +21,6 @@ class Penguin extends Bird {
     swim(){
         return 'swimming...'
     }
-    fly(){
-        throw new Error('penguin cant fly')
-    }
 }
 
 const eagle = new Eagle()
@@ -31,5 +28,6 @@ const penguin = new Penguin()
 console.log(penguin.swim())
 
 //The Liskov Substitution Principle (LSP) states that 
-// objects of a superclass should be replaceable by 
+// objects of a superclass should be replacable(can be override) by
 // objects of a subclass without altering the correctness of the program.
+// So, we will do abstraction to keep superclass methods follwing a single rule 
