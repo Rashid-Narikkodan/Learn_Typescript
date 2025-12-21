@@ -1,23 +1,23 @@
-//this is wrong , bcz mouse cant type like keyboard
+//this is wrong , bcz a Service should only responsible for a single service
+//here we have a service to Order, but it contains multiple responsibilies like fetchDB, PaymentServices
+class OrderSerivces{
+    fetchUser(){}
+    placeOrder(){}
+    razorpay(){}
 
-class Mousee{
-    scroll(){
-        return 'scrolling.....'
-    }
-    typing(){
-        return 'typing.....'
-    }
 }
 
+//Solved
 //based on single responsibility
-class Mouse{
-    scroll(){
-        return 'scrolling.....'
-    }
-}
 
-class KeyBoard{
-    typing(){
-        return 'typing.....'
+class RazorPay{
+    pay(rupees:string){}
+}
+class FetchUser{
+    fetch(id:string){}
+}
+class OrderSerivce{
+    placeOrder(){
+        //call other servics from here
     }
 }
