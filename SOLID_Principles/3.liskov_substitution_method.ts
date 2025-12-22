@@ -3,7 +3,7 @@ interface Flyable{
 }
 
 class Bird{
-    walk(){
+      private walk(){
         return 'can walk'
     }
 }

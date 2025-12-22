@@ -8,5 +8,13 @@ to add metadata for them, or to modify behaviour at built time
 
 5 types of Decoraters
 _________________________
+1.  Class Decorater - A function that is applied to a class constructor to observe, modify, or replace the class definition.
+    it will run rigt after declare a class
 
-1. Class Decorater - A function that is applied to a class constructor to observe, modify, or replace the class definition.
+2.  Method Decorator - 
+
+3.  Accessor Decorator - 
+
+4.  Property Decorator - 
+
+5.  Parameter Decorator - 

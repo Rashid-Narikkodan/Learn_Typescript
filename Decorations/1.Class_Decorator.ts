@@ -1,6 +1,6 @@
 // example 1
 function Logger(constructor: Function) {
-    console.log("Class created:", constructor.name);
+    console.log("Class created:", constructor);
   }
   
   @Logger
@@ -8,8 +8,8 @@ function Logger(constructor: Function) {
 
 
 // example 2
-function Timestamped(constructor: Function) {
-    constructor.prototype.createdAt = new Date();
+function Timestamped(con: Function) {
+    con.prototype.createdAt = new Date();
   }
   
   @Timestamped
