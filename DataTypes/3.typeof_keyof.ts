@@ -13,3 +13,4 @@ const user={
 type UserKeys = keyof typeof user 
 
 //used to get union of keys of a User type as new Type
+const config= ["dark", "light"] as const;

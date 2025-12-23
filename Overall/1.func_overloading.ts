@@ -1,4 +1,4 @@
-function format(value:string):string
+function format(a:string):string
 function format(value:number,decimal:number):number
 
 function format(value:string|number,decimal?:number):(string|number){
@@ -8,3 +8,4 @@ function format(value:string|number,decimal?:number):(string|number){
 
 console.log(format('  hello  '))
 console.log(format(3.14159,2))
+

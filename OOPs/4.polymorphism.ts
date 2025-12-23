@@ -18,20 +18,17 @@ class BMW extends Car{
 
 
 // 2. Method over loading
-interface Human{
-hello():string
-hello(greet:string):string
-}
+class Men{
+    hello():number;
+    hello(greet:string):string;
 
-class Person{
-    hello(){
-        return 'hello from person'
-    }
-}
-class Men implements Human{
-    hello(greet?:string): string {
-        return `hey buddy,${greet}`
+    hello<T>(greet?:T):T|number{
+        if(typeof greet !== 'string') return 0
+        else return greet
     }
     
 }
+const men = new Men()
+console.log(men.hello())
+console.log(men.hello('Good morning'))
 // Polymorphism is the ability of different objects to respond to the same method call in different ways.

@@ -2,7 +2,6 @@
 function Logger(constructor: Function) {
     console.log("Class created:", constructor);
   }
-  
   @Logger
   class User {}
 
@@ -19,5 +18,4 @@ function Timestamped(con: Function) {
   
   const order = new Order();
   console.log(order.createdAt);
-  
   

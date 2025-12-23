@@ -14,6 +14,7 @@ class PayPal implements PaymentGateway{
 class OrderService{
     constructor(private payment:PaymentGateway){}
     placeOrder(product:string,price:number){
+        
         //validation
         //db fetch
         this.payment.payment(20)

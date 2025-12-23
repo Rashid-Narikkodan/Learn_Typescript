@@ -16,7 +16,7 @@ const greetingWithGenerics = greetWithGenerics<number>('rashid',23)//age is the 
 
 // 3. call without pass genric type in <>, 
 // now TS will inferred the "23" as string, so <Type> is become <string>
-const g = greetWithGenerics('rashid','23')
+const g = greetWithGenerics('rashid',23)
 
 
 // 4.we can  also pass multiple parameters in generics, also return value is a array

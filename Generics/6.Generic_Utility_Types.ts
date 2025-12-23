@@ -48,7 +48,7 @@ const users:UserRecords={
     'admin':{name:'salman'},
     'superAdmin':{name:'rinshad'},
     'Manager':{name:'rashid'}//we cant change teh keys, bcz its fixed by Records
-    //also al keys should present in object
+    //also al keys shou ld present in object
 }
 //
 function createUser(name:string,age:number){
